@@ -9,5 +9,3 @@ function totalProduction(no_of_sheds){
     }
     const shedData={A: 510, B: 308, C: 486, D: 572};
     totalProduction(shedData)
-    // Update header text
-    document.querySelector('#header').innerHTML = message
