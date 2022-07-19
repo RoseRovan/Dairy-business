@@ -2,44 +2,44 @@ const inputA = document.getElementById('shedA');
 const inputB = document.getElementById('shedB');
 const inputC = document.getElementById('shedC');
 const inputD = document.getElementById('shedD');
-const myContainer = document.getElementById('myContainer')
+const myForm = document.getElementById('myForm')
 
 
 
-let weeklyIncomeQ= document.getElementById('output6'); 
-let weeklyIncomeQ1= document.getElementById('output7'); 
+let weeklyIncomeQ= document.getElementById('results6'); 
+let weeklyIncomeQ1= document.getElementById('results7'); 
 
 
-myContainer.addEventListener('submit', (output)=>{
-    output.preventDefault();
+myForm.addEventListener('submit', (results)=>
+    results.preventDefault();
 
-    let output1 = document.getElementById('output1');
+    let results1 = document.getElementById('results1');
     const answerA = parseInt(inputA.value);
 
 
-    let results2 = document.getElementById('output2');
+    let results2 = document.getElementById('results2');
 const answerB = parseInt(inputB.value);
 
-let results3 = document.getElementById('output3');
+let results3 = document.getElementById('results3');
 const answerC = parseInt(inputC.value);
 
 let results4 = document.getElementById('output4');
 const answerD = parseInt(inputD.value);
 
     
-    output1.innerHTML=`Your production in Shed A ${answerA} litres per day`
+    results1.innerHTML=`Your production in Shed A ${answerA} litres per day`
 
     
-    output2.innerHTML=`Your production in Shed B ${answerB} litres per day`
+    results2.innerHTML=`Your production in Shed B ${answerB} litres per day`
 
     
-    output3.innerHTML=`Your production in Shed C ${answerC} litres per day`
+    results3.innerHTML=`Your production in Shed C ${answerC} litres per day`
 
-        output4.innerHTML=`Your production in Shed D ${answerD} litres per day`
+        results4.innerHTML=`Your production in Shed D ${answerD} litres per day`
 
 
        let answer5 = answerA+answerB+answerC+answerD;
-       document.getElementById('output5').innerHTML=`The total production is ${answer5} litres per day`;
+       document.getElementById('results5').innerHTML=`The total production is ${answer5} litres per day`;
 
        incomeOverTime(answer5, 7);
        incomeOverTimeYear(answer5, 365);
@@ -51,19 +51,19 @@ const answerD = parseInt(inputD.value);
 
 
        let January = answer5 * 45 * 31;
-       document.getElementById('output8').innerHTML= `Your income for January is ${January}`
+       document.getElementById('results8').innerHTML= `Your income for January is ${January}`
 
        let Feb = answer5 * 45 * 28;
-       document.getElementById('output9').innerHTML= `Your income for February is ${Feb}`
+       document.getElementById('results9').innerHTML= `Your income for February is ${Feb}`
 
        let March = answer5 * 45 * 31;
-       document.getElementById('output10').innerHTML= `Your income for March is ${March}`
+       document.getElementById('results10').innerHTML= `Your income for March is ${March}`
 
        let April = answer5 * 45 * 30;
-       document.getElementById('output11').innerHTML= `Your income for April is ${April}`
+       document.getElementById('results11').innerHTML= `Your income for April is ${April}`
 
        let May = answer5 * 45 * 31;
-       document.getElementById('output12').innerHTML= `Your income for May is ${May}`
+       document.getElementById('results12').innerHTML= `Your income for May is ${May}`
 
        let June = answer5 * 45 * 30;
        document.getElementById('output13').innerHTML= `Your income for June is ${June}`
@@ -99,6 +99,6 @@ weeklyIncomeQ.innerHTML = `Your weekly income will be Ksh ${weeklyIncome}`
 function incomeOverTimeYear(totalProduction, time){
     const price = 45;
    let yearlyIncome = (totalProduction * price) * time;
-weeklyIncomeQ1.innerHTML = `Your weekly income will be Ksh ${AnnualyIncome}`
+weeklyIncomeQ1.innerHTML = `Your weekly income will be Ksh ${yearlyIncome}`
 
 }

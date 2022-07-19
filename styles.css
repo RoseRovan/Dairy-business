@@ -9,7 +9,7 @@
 .section2 {
     width: 50%;
 }
-#output1 {
+#results1 {
     margin-top: 70px;
 }
 form div{
@@ -19,8 +19,8 @@ form div{
 
 }
 form div label{
-font: 20px;
-font-family: 'Times New Roman', Times, serif;
+font: 30px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .button{
     width: 50%;
