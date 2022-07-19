@@ -46,62 +46,62 @@ formResults.addEventListener("submit", (result) => {
   let January = answer5 * 45 * 31;
   document.getElementById(
     "results8"
-  ).innerHTML = `Your income for January is ${January}`;
+  ).innerHTML = `Total January income is ${January}`;
 
   let Feb = answer5 * 45 * 28;
   document.getElementById(
     "results9"
-  ).innerHTML = `Your income for February is ${Feb}`;
+  ).innerHTML = `Total February income is ${Feb}`;
 
   let March = answer5 * 45 * 31;
   document.getElementById(
     "results10"
-  ).innerHTML = `Your income for March is ${March}`;
+  ).innerHTML = `Total March income is ${March}`;
 
   let April = answer5 * 45 * 30;
   document.getElementById(
     "results11"
-  ).innerHTML = `Your income for April is ${April}`;
+  ).innerHTML = `Total April income is ${April}`;
 
   let May = answer5 * 45 * 31;
   document.getElementById(
     "results12"
-  ).innerHTML = `Your income for May is ${May}`;
+  ).innerHTML = `Total May income is ${May}`;
 
   let June = answer5 * 45 * 30;
   document.getElementById(
     "results13"
-  ).innerHTML = `Your income for June is ${June}`;
+  ).innerHTML = `Total June income is ${June}`;
 
   let July = answer5 * 45 * 31;
   document.getElementById(
     "results14"
-  ).innerHTML = `Your income for July is ${July}`;
+  ).innerHTML = `Total July income is ${July}`;
 
   let August = answer5 * 45 * 31;
   document.getElementById(
     "results15"
-  ).innerHTML = `Your income for August is ${August}`;
+  ).innerHTML = `Total August income is ${August}`;
 
   let September = answer5 * 45 * 30;
   document.getElementById(
     "results16"
-  ).innerHTML = `Your income for September is ${September}`;
+  ).innerHTML = `Total September income is ${September}`;
 
   let October = answer5 * 45 * 31;
   document.getElementById(
     "results17"
-  ).innerHTML = `Your income for October is ${October}`;
+  ).innerHTML = `Total October income is ${October}`;
 
   let November = answer5 * 45 * 30;
   document.getElementById(
     "results18"
-  ).innerHTML = `Your income for November is ${November}`;
+  ).innerHTML = `Total November income is ${November}`;
 
   let December = answer5 * 45 * 31;
   document.getElementById(
     "results19"
-  ).innerHTML = `Your income for December is ${December}`;
+  ).innerHTML = `Total December income is ${December}`;
 });
 
 function incomeOverTime(totalProduction, time) {
