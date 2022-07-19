@@ -22,13 +22,13 @@ formResults.addEventListener("submit", (result) => {
   let results4 = document.getElementById("results4");
   const answerD = parseInt(shedD.value);
 
-  results1.innerHTML = `Your production in Shed A ${answerA} litres per day`;
+  results1.innerHTML = `Amount of milk produced in Shed A ${answerA} litres per day`;
 
-  results2.innerHTML = `Your production in Shed B ${answerB} litres per day`;
+  results2.innerHTML = `Amount of milk produced in Shed B ${answerB} litres per day`;
 
-  results3.innerHTML = `Your production in Shed C ${answerC} litres per day`;
+  results3.innerHTML = `Amount of milk produced in Shed C ${answerC} litres per day`;
 
-  results4.innerHTML = `Your production in Shed D ${answerD} litres per day`;
+  results4.innerHTML = `Amount of milk produced in Shed D ${answerD} litres per day`;
 
   let answer5 = answerA + answerB + answerC + answerD;
   document.getElementById(
