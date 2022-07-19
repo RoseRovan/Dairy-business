@@ -1,8 +1,24 @@
+* {
+  color: blue;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: large;
+}
 .productionReport {
     display: flex;
     width: 100%;
     justify-content: space-around;
+    color: blue;
+    font-weight: bolder;
+    font-size: larger;
   }
+  .background {
+    background-image: url("./background1.jpg");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+
   .section1 {
     width: 30%;
   }
@@ -22,9 +38,9 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
   .button {
-     width: 50%; 
+     /*width: 50%; */
     margin-top: 10px;
-     height: 0px; 
+    /* height: 0px; */
     border: 1px;
     border-radius: 10px;
     background-color: brown;
@@ -42,3 +58,6 @@
   }
   #sum4 {
     display: none;}
+    .summary{
+      color: blue;
+    }
