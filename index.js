@@ -1,104 +1,117 @@
-const inputA = document.getElementById('shedA');
-const inputB = document.getElementById('shedB');
-const inputC = document.getElementById('shedC');
-const inputD = document.getElementById('shedD');
-const myForm = document.getElementById('myForm')
+const shedA = document.getElementById("shedA");
+const shedB = document.getElementById("shedB");
+const shedC = document.getElementById("shedC");
+const shedD = document.getElementById("shedD");
+const formResults = document.getElementById("formResults");
 
+let weeklyIncomeP = document.getElementById("results6");
+let weeklyIncomeP1 = document.getElementById("results7");
 
+formResults.addEventListener("submit", (result) => {
+  result.preventDefault();
 
-let weeklyIncomeQ= document.getElementById('results6'); 
-let weeklyIncomeQ1= document.getElementById('results7'); 
+  let results1 = document.getElementById("results1");
+  const answerA = parseInt(shedA.value);
 
+  let results2 = document.getElementById("results2");
+  const answerB = parseInt(shedB.value);
 
-myForm.addEventListener('submit', (results)=>
-    results.preventDefault();
+  let results3 = document.getElementById("results3");
+  const answerC = parseInt(shedC.value);
 
-    let results1 = document.getElementById('results1');
-    const answerA = parseInt(inputA.value);
+  let results4 = document.getElementById("results4");
+  const answerD = parseInt(shedD.value);
 
+  results1.innerHTML = `Your production in Shed A ${answerA} litres per day`;
 
-    let results2 = document.getElementById('results2');
-const answerB = parseInt(inputB.value);
+  results2.innerHTML = `Your production in Shed B ${answerB} litres per day`;
 
-let results3 = document.getElementById('results3');
-const answerC = parseInt(inputC.value);
+  results3.innerHTML = `Your production in Shed C ${answerC} litres per day`;
 
-let results4 = document.getElementById('output4');
-const answerD = parseInt(inputD.value);
+  results4.innerHTML = `Your production in Shed D ${answerD} litres per day`;
 
-    
-    results1.innerHTML=`Your production in Shed A ${answerA} litres per day`
+  let answer5 = answerA + answerB + answerC + answerD;
+  document.getElementById(
+    "results5"
+  ).innerHTML = `The total production is ${answer5} litres per day`;
 
-    
-    results2.innerHTML=`Your production in Shed B ${answerB} litres per day`
+  incomeOverTime(answer5, 7);
+  incomeOverTimeYear(answer5, 365);
 
-    
-    results3.innerHTML=`Your production in Shed C ${answerC} litres per day`
+  document.getElementById("sum1").style.display = "block";
+  document.getElementById("sum2").style.display = "block";
+  document.getElementById("sum3").style.display = "block";
+  document.getElementById("sum4").style.display = "block";
 
-        results4.innerHTML=`Your production in Shed D ${answerD} litres per day`
+  let January = answer5 * 45 * 31;
+  document.getElementById(
+    "results8"
+  ).innerHTML = `Your income for January is ${January}`;
 
+  let Feb = answer5 * 45 * 28;
+  document.getElementById(
+    "results9"
+  ).innerHTML = `Your income for February is ${Feb}`;
 
-       let answer5 = answerA+answerB+answerC+answerD;
-       document.getElementById('results5').innerHTML=`The total production is ${answer5} litres per day`;
+  let March = answer5 * 45 * 31;
+  document.getElementById(
+    "results10"
+  ).innerHTML = `Your income for March is ${March}`;
 
-       incomeOverTime(answer5, 7);
-       incomeOverTimeYear(answer5, 365);
-       
-        document.getElementById('sum1').style.display='block';
-        document.getElementById('sum2').style.display='block';
-        document.getElementById('sum3').style.display='block';
-        document.getElementById('sum4').style.display='block';
+  let April = answer5 * 45 * 30;
+  document.getElementById(
+    "results11"
+  ).innerHTML = `Your income for April is ${April}`;
 
+  let May = answer5 * 45 * 31;
+  document.getElementById(
+    "results12"
+  ).innerHTML = `Your income for May is ${May}`;
 
-       let January = answer5 * 45 * 31;
-       document.getElementById('results8').innerHTML= `Your income for January is ${January}`
+  let June = answer5 * 45 * 30;
+  document.getElementById(
+    "results13"
+  ).innerHTML = `Your income for June is ${June}`;
 
-       let Feb = answer5 * 45 * 28;
-       document.getElementById('results9').innerHTML= `Your income for February is ${Feb}`
+  let July = answer5 * 45 * 31;
+  document.getElementById(
+    "results14"
+  ).innerHTML = `Your income for July is ${July}`;
 
-       let March = answer5 * 45 * 31;
-       document.getElementById('results10').innerHTML= `Your income for March is ${March}`
+  let August = answer5 * 45 * 31;
+  document.getElementById(
+    "results15"
+  ).innerHTML = `Your income for August is ${August}`;
 
-       let April = answer5 * 45 * 30;
-       document.getElementById('results11').innerHTML= `Your income for April is ${April}`
+  let September = answer5 * 45 * 30;
+  document.getElementById(
+    "results16"
+  ).innerHTML = `Your income for September is ${September}`;
 
-       let May = answer5 * 45 * 31;
-       document.getElementById('results12').innerHTML= `Your income for May is ${May}`
+  let October = answer5 * 45 * 31;
+  document.getElementById(
+    "results17"
+  ).innerHTML = `Your income for October is ${October}`;
 
-       let June = answer5 * 45 * 30;
-       document.getElementById('output13').innerHTML= `Your income for June is ${June}`
+  let November = answer5 * 45 * 30;
+  document.getElementById(
+    "results18"
+  ).innerHTML = `Your income for November is ${November}`;
 
-       let July = answer5 * 45 * 31;
-       document.getElementById('output14').innerHTML= `Your income for July is ${July}`
+  let December = answer5 * 45 * 31;
+  document.getElementById(
+    "results19"
+  ).innerHTML = `Your income for December is ${December}`;
+});
 
-       let August = answer5 * 45 * 31;
-       document.getElementById('output15').innerHTML= `Your income for August is ${August}`
-
-       let September = answer5 * 45 * 30;
-       document.getElementById('outpu16').innerHTML= `Your income for September is ${September}`
-
-       let October = answer5 * 45 * 31;
-       document.getElementById('output17').innerHTML= `Your income for October is ${October}`
-
-       let November = answer5 * 45 * 30;
-       document.getElementById('output18').innerHTML= `Your income for November is ${November}`
-
-       let December = answer5 * 45 * 31;
-       document.getElementById('output19').innerHTML= `Your income for December is ${December}`
-
-
-})
-
-function incomeOverTime(totalProduction, time){
-    const price = 45;
-   let weeklyIncome = (totalProduction * price) * time;
-weeklyIncomeQ.innerHTML = `Your weekly income will be Ksh ${weeklyIncome}`
-
+function incomeOverTime(totalProduction, time) {
+  const price = 45;
+  let weeklyIncome = totalProduction * price * time;
+  weeklyIncomeP.innerHTML = `Your weekly income will be Ksh ${weeklyIncome}`;
 }
 
-function incomeOverTimeYear(totalProduction, time){
-    const price = 45;
-   let yearlyIncome = (totalProduction * price) * time;
-weeklyIncomeQ1.innerHTML = `Your weekly income will be Ksh ${yearlyIncome}`
-
+function incomeOverTimeYear(totalProduction, time) {
+  const price = 45;
+  let yearlyIncome = totalProduction * price * time;
+  weeklyIncomeP1.innerHTML = `Your weekly income will be Ksh ${yearlyIncome}`;
 }

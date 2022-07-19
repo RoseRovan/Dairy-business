@@ -1,47 +1,44 @@
-.productionReport{
+.productionReport {
     display: flex;
     width: 100%;
     justify-content: space-around;
-}
-.section1{
+  }
+  .section1 {
     width: 30%;
-}
-.section2 {
+  }
+  .section2 {
     width: 50%;
-}
-#results1 {
+  }
+  #results1 {
     margin-top: 70px;
-}
-form div{
+  }
+  form div {
     display: flex;
     flex-direction: column;
     padding: 5px;
-
-}
-form div label{
-font: 30px;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.button{
-    width: 50%;
+  }
+  form div label {
+    font: 30px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .button {
+    /* width: 50%; */
     margin-top: 10px;
-    height: 70px;
+    /* height: 0px; */
     border: 1px;
-    border-radius: 15px 15px 15px 15px ;
+    border-radius: 10px;
     background-color: rebeccapurple;
     color: white;
     font-size: 20px;
-}
-#sum1{
-    display:none;
-}
-#sum2{
+  }
+  #sum1 {
     display: none;
-}
-#sum3{
+  }
+  #sum2 {
     display: none;
-}
-#sum4{
+  }
+  #sum3 {
     display: none;
-}
-
+  }
+  #sum4 {
+    display: none;}
