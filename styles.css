@@ -1,11 +1,10 @@
 .productionReport{
+    display: flex;
     width: 100%;
     justify-content: space-around;
-    display: flex;
 }
-
 .section1{
-    width: 35%;
+    width: 30%;
 }
 .section2 {
     width: 50%;
@@ -13,10 +12,25 @@
 #output1 {
     margin-top: 70px;
 }
-.myContainer{
+form div{
     display: flex;
     flex-direction: column;
+    padding: 5px;
+
+}
+form div label{
+font: 20px;
 font-family: 'Times New Roman', Times, serif;
+}
+.button{
+    width: 50%;
+    margin-top: 10px;
+    height: 70px;
+    border: 1px;
+    border-radius: 15px 15px 15px 15px ;
+    background-color: rebeccapurple;
+    color: white;
+    font-size: 20px;
 }
 #sum1{
     display:none;
@@ -31,6 +45,3 @@ font-family: 'Times New Roman', Times, serif;
     display: none;
 }
 
-.section2{
-
-} 
