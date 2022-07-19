@@ -22,9 +22,9 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
   .button {
-    /* width: 50%; */
+     width: 50%; 
     margin-top: 10px;
-    /* height: 0px; */
+     height: 0px; 
     border: 1px;
     border-radius: 10px;
     background-color: brown;
