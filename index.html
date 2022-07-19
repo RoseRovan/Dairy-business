@@ -1,91 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dairy Business Production Report</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+  </head>
 
-<body>
+  <body>
     <div class="productionReport">
-        <!-- SECTION1 START-->
-        <div class="section1">
-            <h2>Expected Income per Day, per Shed</h2>
-            <!-- myContainer1-->
-            <form id="myForm">
-                <div>
-                    <label for="shedA"> Kindly enter your shed A values </label>
-                    <input type="number" id="shedA" class="dairy" required>
+      <!-- SECTION1 START-->
+      <div class="section1">
+        <h2>Expected Income per Day, per Shed</h2>
+        <!-- myContainer1-->
+        <form id="formResults">
+          <div>
+            <label for="shedA"> Kindly enter your shed A values </label>
+            <input type="number" id="shedA" class="dairy" required />
+          </div>
+          <div>
+            <label for="shedB"> Kindly enter your shed B values </label>
+            <input type="number" id="shedB" class="dairy" required />
+          </div>
+          <div>
+            <label for="shedC"> Kindly enter your shed C values </label>
+            <input type="number" id="shedC" class="dairy" required />
+          </div>
+          <div>
+            <label for="shedD"> Kindly enter your shed D values </label>
+            <input type="number" id="shedD" class="dairy" required />
+            <!-- <input class="button" type = "submit" onclick = "incomeOverTime" value = "Display"> -->
+          </div>
+          <button class="button" type="submit">submit</button>
+        </form>
+      </div>
+      <!-- SECTION1 END-->
+      <!-- SECTION2 START-->
 
-                </div>
-                <div>
-                    <label for="shedB"> Kindly enter your shed B values  </label>
-                    <input type="number" id="shedB" class="dairy" required>
-                </div>
-                <div>
-                    <label for="shedB"> Kindly enter your shed C values  </label>
-                    <input type="number" id="shedB" class="dairy" required>
-                </div>
-                <div>
-                    <label for="shedB"> Kindly enter your shed D values  </label>
-                    <input type="number" id="shedB" class="dairy" required>
-                </div>
-                
-
-            </form>
-            <button class="button" type="submit"> submit </button>
-
-
+      <div class="section2">
+        <div class="results">
+          <h2 id="sum4">Milk Produced per Shed Report</h2>
+          <p id="results1"></p>
+          <p id="results2"></p>
+          <p id="results3"></p>
+          <p id="results4"></p>
+          <b><p id="results5"></p></b>
         </div>
-        <!-- SECTION1 END-->
-        <!-- SECTION2 START-->
-
-        <div class="section2">
-            <div class="results">
-                <h2 id="sum4"> Milk Produced per Shed Report</h2>
-                <p id="results1"></p>
-                <p id="results2"></p>
-                <p id="results3"></p>
-                <p id="results4"></p>
-                <b><p id="results5"></p></b>
-            </div>
-        </div>
+      </div>
     </div>
     <!-- annual and weekly production report -->
 
     <div class="yearly">
-        <h2 id="sum2"> weeklIncome </h2>
-        <p id="results6"></p>
-        <h2 id = "sum3"> yearlyIncome </h2>
-        <p id="results7"></p>
+      <h2 id="sum2">weeklIncome</h2>
+      <p id="results6"></p>
+      <h2 id="sum3">yearlyIncome</h2>
+      <p id="results7"></p>
     </div>
     <!-- Overall Output  -->
 
     <div class="summary">
-        <h2 id="sum1"> Monthly Production Summary Report </h2>
-        <p id="results8"></p>
-        <p id="results9"></p>
-        <p id="results10"></p>
-        <p id="results11"></p>
-        <p id="results12"></p>
-        <p id="results13"></p>
-        <p id="results14"></p>
-        <p id="results15"></p>
-        <p id="results16"></p>
-        <p id="results17"></p>
-        <p id="results8"></p>
-        <p id="results9"></p>
+      <h2 id="sum1">Monthly Production Summary Report</h2>
+      <p id="results8"></p>
+      <p id="results9"></p>
+      <p id="results10"></p>
+      <p id="results11"></p>
+      <p id="results12"></p>
+      <p id="results13"></p>
+      <p id="results14"></p>
+      <p id="results15"></p>
+      <p id="results16"></p>
+      <p id="results17"></p>
+      <p id="results8"></p>
+      <p id="results9"></p>
     </div>
 
-
-    <script src="index.js"></script>
-
-
-    </div>
-
-</body>
-
+    <script src="./index.js"></script>
+  </body>
 </html>
+
+	
+	
+	
